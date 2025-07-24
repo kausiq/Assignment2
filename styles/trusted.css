@@ -88,7 +88,7 @@
 
 .trusted-list li:before {
   content: "•";
-  color: #ff6b35;
+  color: #666;
   font-weight: bold;
   position: absolute;
   left: 0;

@@ -52,8 +52,8 @@
 }
 
 .plant-card img {
-  width: 100%;
-  height: 180px;
+  width: 270px;
+  height: 322.94px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -94,4 +94,11 @@
 
 .add-to-cart:hover {
   background: #e55a2b;
+}
+
+/* Tablet specific adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .plants-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

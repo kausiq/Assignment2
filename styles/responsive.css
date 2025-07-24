@@ -1,0 +1,271 @@
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Navbar Mobile */
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: #333;
+    padding: 0;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  /* Hero Mobile */
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .hero-image {
+    order: -1;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+  }
+
+  /* Plants Mobile - 2 cards per row */
+  .plants-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .plant-card {
+    padding: 1rem;
+  }
+
+  .plant-card img {
+    height: 150px;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .price {
+    font-size: 0.9rem;
+  }
+
+  .add-to-cart {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+
+  /* Trusted Mobile */
+  .trusted-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .trusted-image-container {
+    order: -1;
+  }
+
+  .trusted-image {
+    height: 300px;
+  }
+
+  .trusted-badge {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -15px;
+  }
+
+  .badge-text {
+    font-size: 0.6rem;
+  }
+
+  .trusted-content h3 {
+    font-size: 2rem;
+  }
+
+  /* Deals Mobile */
+  .deals-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .deals-left {
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .deal-card {
+    height: 200px;
+  }
+
+  .deals-header h2 {
+    font-size: 2.5rem;
+  }
+
+  /* Footer Mobile */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-logo-section {
+    align-items: center;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .social-section {
+    justify-content: center;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  /* Plants Mobile Small Screens - Keep 2 cards per row */
+  .plants-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .plant-card {
+    padding: 0.75rem;
+  }
+
+  .plant-card img {
+    height: 120px;
+  }
+
+  .card-content h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .price {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .add-to-cart {
+    font-size: 0.7rem;
+    padding: 0.5rem 0.75rem;
+    letter-spacing: 0.3px;
+  }
+
+  .trusted-container {
+    gap: 1.5rem;
+  }
+
+  .trusted-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .deals-header h2 {
+    font-size: 2rem;
+  }
+
+  .deal-percentage {
+    font-size: 1.5rem;
+  }
+
+  .footer-content {
+    gap: 1.5rem;
+  }
+
+  .footer-logo-text {
+    font-size: 1.5rem;
+  }
+
+  .social-icons {
+    gap: 0.75rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 360px) {
+  .plants-grid {
+    gap: 0.5rem;
+  }
+
+  .plant-card {
+    padding: 0.5rem;
+  }
+
+  .plant-card img {
+    height: 100px;
+  }
+
+  .card-content h3 {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .add-to-cart {
+    font-size: 0.65rem;
+    padding: 0.4rem 0.5rem;
+  }
+}

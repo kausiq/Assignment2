@@ -1,11 +1,12 @@
 /* Navbar Styles */
 .navbar {
   background: #fff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+  box-shadow: none;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .nav-container {
@@ -15,38 +16,58 @@
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2d5016;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
 }
+
+.logo img {
+  width: 135px;
+  height: 82px;
+}
+
 
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: #333;
   font-weight: 500;
+  font-size: 1rem;
   transition: color 0.3s;
 }
 
-.nav-menu a:hover {
-  color: #2d5016;
+.nav-active {
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.nav-inactive {
+  color: #999 !important;
+}
+
+.nav-inactive:hover {
+  color: #666 !important;
 }
 
 .cart-link {
-  background: #2d5016;
-  color: white !important;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  background: transparent;
+  color: #333 !important;
+  padding: 0;
+  border-radius: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 500;
+}
+
+.cart-link:hover {
+  color: #ff6b35 !important;
 }
 
 .mobile-cart {

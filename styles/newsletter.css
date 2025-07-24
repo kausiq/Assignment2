@@ -28,6 +28,9 @@
   color: white;
   z-index: 2;
   position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
 }
 
 .newsletter-content h2 {
@@ -39,7 +42,8 @@
 
 .newsletter-form {
   display: flex;
-  max-width: 500px;
+  max-width: 830px;
+  max-height: 50px;
   margin: 0 auto;
   gap: 0;
   border-radius: 5px;
@@ -75,4 +79,59 @@
 
 .subscribe-btn:hover {
   background: #e55a2b;
+}
+
+/* Mobile Newsletter Styles */
+@media (max-width: 768px) {
+  .newsletter-section {
+    min-height: 300px;
+    padding: 2rem 0;
+  }
+
+  .newsletter-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .newsletter-form {
+    max-width: 350px;
+    flex-direction: row;
+    border-radius: 5px;
+  }
+
+  .newsletter-form input {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .subscribe-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9rem;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-content {
+    padding: 0 15px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .newsletter-form {
+    max-width: 300px;
+  }
+
+  .newsletter-form input {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.85rem;
+  }
+
+  .subscribe-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.85rem;
+  }
 }
