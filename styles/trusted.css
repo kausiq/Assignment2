@@ -1,0 +1,96 @@
+/* Trusted Seller Section Styles */
+.trusted-section {
+  background: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.trusted-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.trusted-image-container {
+  position: relative;
+}
+
+.trusted-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 4px solid white;
+}
+
+.badge-stars {
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.badge-icon {
+  width: 35px;
+  height: 35px;
+  background: #2d5016;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+.badge-text {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+
+.trusted-content h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.trusted-list {
+  list-style: none;
+}
+
+.trusted-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.trusted-list li:before {
+  content: "•";
+  color: #ff6b35;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}

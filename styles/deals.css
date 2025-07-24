@@ -1,0 +1,123 @@
+/* Latest Deals Section Styles */
+.deals-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.deals-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.deals-header h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.deals-header h2 .latest {
+  color: #ff6b35;
+}
+
+.deals-header h2 .deals {
+  color: #333;
+}
+
+.deals-header p {
+  font-size: 1.1rem;
+  color: #888;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  height: 500px;
+}
+
+.deals-left {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.deal-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: scale(1.02);
+}
+
+.deal-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.deal-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.deal-card.bloom {
+  background-image: url("/image/deal-bloom.png");
+}
+
+.deal-card.ana {
+  background-image: url("/image/deal-ana.png");
+}
+
+.deal-card.zabo {
+  background-image: url("/image/deal-zabo.png");
+}
+
+.deal-percentage {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.deal-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.shop-now {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+.shop-now:hover {
+  background: white;
+  transform: translateY(-2px);
+}
