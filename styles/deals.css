@@ -81,15 +81,15 @@
 }
 
 .deal-card.bloom {
-  background-image: url("image/deal-bloom.png");
+  background-image: url("../image/deal-bloom.png");
 }
 
 .deal-card.ana {
-  background-image: url("image/deal-ana.png");
+  background-image: url("../image/deal-ana.png");
 }
 
 .deal-card.zabo {
-  background-image: url("image/deal-zabo.png");
+  background-image: url("../image/deal-zabo.png");
 }
 
 .deal-percentage {
